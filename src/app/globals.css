@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --color-*: initial;
+ --color-primary-dark1-:#0A196F;
+ --color-primary-dark2-:#102587;
+ --color-primary-dark3-:#1A37A7;
+ --color-primary-dark4-:#264BC8;
+ --color-primary-default-:#3563E9;
+  --color-primary-light1-:#658DF1;
+  --color-primary-light2-:#85A8F8;
+  --color-primary-light3-:#AEC8FC;
+  --color-primary-light4-:#D6E4FD;
+
+  --color-success-dark1-:#3B6506;
+  --color-success-dark2-:#4C7A0B;
+  --color-success-dark3-:#659711;
+  --color-success-dark4-:#7FB519;
+  --color-success-default-:#9CD323;
+  --color-success-light1-:#BCE455;
+  --color-success-light2-:#D3F178;
+  --color-success-light3-:#E8FAA6;
+  --color-success-light4-:#F5FCD2;
+
+  --color-error-dark1-:#7A0619;
+  --color-error-dark2-:#930B16;
+  --color-error-dark3-:#B71112;
+  --color-error-dark4-:#DB2719;
+  --color-error-default-:#FF4423;
+  --color-error-light1-:#FF7F59;
+  --color-error-light2-:#FFA37A;
+  --color-error-light3-:#FFC8A6;
+  --color-error-light4-:#FFE7D3;
+
+--color-warrning-dark1-:#7A4D0B;
+--color-warrning-dark2-:#936312;
+--color-warrning-dark3-:#B7821D;
+--color-warrning-dark4-:#DBA32A;
+--color-warrning-default-:#FFC73A;
+--color-warrning-light1-:#FFD96B;
+--color-warrning-light2-:#FFE488;
+--color-warrning-light3-:#FFEFB0;
+--color-warrning-light4-:#FFF8D7;
+
+--color-information-dark1-:#102E7A;
+--color-information-dark2-:#1A4393;
+--color-information-dark3-:#2A60B7;
+--color-information-dark4-:#3D81DB;
+--color-information-default-:#54A6FF;
+--color-information-light1-:#7EC2FF;
+--color-information-light2-:#98D3FF;
+--color-information-light3-:#BAE5FF;
+--color-information-light4-:#DCF3FF;
+
+--color-secondary-dark1-:#040815;
+--color-secondary-dark2-:#080C19;
+--color-secondary-dark3-:#0D121F;
+--color-secondary-dark4-:#131825;
+--color-secondary-default-:#1A202C;
+--color-secondary-light1-:#596780;
+--color-secondary-light2-:#90A3BF;
+--color-secondary-light3-:#C3D4E9;
+--color-secondary-light4-:#E0E9F4;
+
+--color-main-blue-:#7F95D1;
+--color-main-melon-:#FFC0BE;
+--color-main-rose-:#FFEBE7;
+
+--color-main-lightpink:#FFEDFA;
+--color-main-lightpink2:#FFB8E0;
+--color-main-darkpink:#EC7FA9;
+--color-main-darkpink2:#BE5985;
+}
+
+  :root {
+    --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+     --color-background: var(--background);
+   --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+    background-color:#FFB8E0;
+}
+
+

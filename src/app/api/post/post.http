@@ -1,0 +1,12 @@
+### GET request to example server
+GET http://localhost:3000/api/post
+
+###
+POST localhost:3000/api/post
+Content-Type: application/json
+
+{
+  "body": "fdgihoog",
+  "image": "fghikjdfhg",
+  "userId": "67cf0c7561777301c1c39fc0"
+}
