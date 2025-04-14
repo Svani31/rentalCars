@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 interface User {
   id: number;
@@ -96,9 +97,14 @@ const users: User[] = [
 ];
 
 const UserCard = ({ user }: { user: User }) => {
+  const router = useRouter();
+
   return (
-    <div className="w-full xs:w-40 sm:w-36 md:w-44 lg:64 bg-gradient-to-br from-pink-dark to-pink-dark2 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-pink-dark/30 mx-1 my-3">
-      {/* User Image */}
+    <div
+      onClick={() => router.push(`/components/user/id=${user.id}`)}
+      className="w-full xs:w-40 sm:w-36 md:w-44 lg:64 bg-gradient-to-br from-pink-dark to-pink-dark2 rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-pink-dark/30 mx-1 my-3"
+    >
+      {/* Page Image */}
       <div className="relative aspect-square w-full">
         <img
           src={user.image}
@@ -114,7 +120,7 @@ const UserCard = ({ user }: { user: User }) => {
         />
       </div>
 
-      {/* User Info */}
+      {/* Page Info */}
       <div className="p-3 text-center">
         <div className="flex justify-center items-center space-x-1 mb-1">
           <h2 className="text-sm font-bold text-white truncate max-w-[80%]">
@@ -161,6 +167,10 @@ const UserCard = ({ user }: { user: User }) => {
 };
 
 const UserCardsGrid = () => {
+  const router = useRouter();
+  const routerHandler = () => {
+    // console.log("this is router handler");
+  };
   return (
     <div className="container mx-auto px-3 py-4">
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-2 xs:gap-3">

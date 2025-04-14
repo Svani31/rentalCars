@@ -157,7 +157,7 @@ export default function UserCarousel() {
         {users.map((user) => (
           <SwiperSlide key={user.id} className="pb-12">
             <div className="relative h-full bg-gradient-to-br from-pink-dark to-pink-dark2 rounded-3xl overflow-hidden shadow-2xl transition-all duration-300 hover:scale-[1.02] hover:shadow-pink-dark/50 mx-auto max-w-xs">
-              {/* User Image */}
+              {/* Page Image */}
               <div className="relative h-48 w-full">
                 <img
                   src={user.image}
@@ -173,7 +173,7 @@ export default function UserCarousel() {
                 />
               </div>
 
-              {/* User Info */}
+              {/* Page Info */}
               <div className="p-6 text-center">
                 <div className="flex justify-center items-center space-x-2 mb-2">
                   <h2 className="text-xl font-bold text-white">{user.name}</h2>
